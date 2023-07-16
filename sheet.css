@@ -1,0 +1,178 @@
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type:none ;
+    transition:all 0.2s linear;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#E0D3DB;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 30px 30px;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0%;
+}
+.navbar{
+    display: flex;
+    font-weight: 500;
+    font-size: large;
+    font-family: 'Handlee', cursive;
+}
+.navbar a{
+  color:deeppink ;
+  padding: 20px;
+  transition: .3s;
+}
+.navbar li:hover{
+    cursor: pointer;
+        transform: scale(1.2);
+}
+.navbar a:active,
+.navbar a:hover{
+    color:black;
+    transition: all .3s ease-out;
+    border-radius: 25%;
+    background-image: #03e9f4;
+}
+.logo{
+    position: relative;
+    color:darkslategray;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+}
+#about {
+    background-color:#E0D3DB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust the height as per your preference */
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-section .image-container {
+    flex: 1;
+    text-align: center;
+    bottom: 0;
+}
+
+.about-section .image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-section .text-container {
+    flex: 1;
+    padding: 0 50px;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive /* Change the font-family */
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #555;
+    text-align: end;
+    line-height: 1.5;
+     font-family: 'Handlee', cursive;
+}
+
+.about-section .image-container img {
+    max-width: 100%;
+    height: 2%;
+    border-radius: 20%;
+    /*background: url("C:/Users/priya/OneDrive/Documents/about.jpg");*/
+
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+}
+#skills {
+  padding: 10px 0;
+}
+
+.skills-content {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+.skill-section {
+  margin-top: 40px;
+  width: 25%;
+}
+
+.skill-section h3 {
+  font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    position: relative;
+
+}
+.skill-section h3::before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  left: 0;
+  bottom: -8px;
+  background: var(--main-color);
+}
+.skill-section ul li:not(last-child){
+  margin-bottom: 15px;
+
+}
+.skill-section ul li a{
+  color:black;
+  font-size: 1.1rem;
+  display: block;
+  text-transform: capitalize;
+  transition: .4s;
+}
+.skill-section ul li a:hover{
+  color: var(--text-color);
+  transform: translateX(-12px);
+}
+@media(max-width:575px){
+    .skill-section{
+        width: 100%;
+    }
+}
+@media(max-width:1140px){
+    .skill-section{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
